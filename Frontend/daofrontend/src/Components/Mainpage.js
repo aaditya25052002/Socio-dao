@@ -17,6 +17,7 @@ import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import RestoreIcon from "@mui/icons-material/Restore";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import DaoDialog from "./DaoDialog";
 
 const Mainpage = () => {
   const history = useNavigate();
@@ -69,7 +70,7 @@ const Mainpage = () => {
               className="main-btns"
             >
               <Button>Create a new proposal</Button>
-              <Button>Delegate vote</Button>
+              <DaoDialog/>
             </ButtonGroup>
           </Grid>
         </Grid>
